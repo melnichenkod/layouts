@@ -43,7 +43,7 @@ body {
   max-width: 65.625rem;
   position: relative;
 }
-.example__container::before {
+/* .example__container::before {
   content: "";
   background: url("./img/decor.svg") 0 0 / 100% no-repeat;
   position: absolute;
@@ -52,7 +52,7 @@ body {
   padding-top: 22.95%;
   top: 50%;
   transform: translate(50%, -50%);
-}
+} */
 .example__header{
   margin: 0px 0px 25px 0px;
   max-width: 46.875rem;
@@ -108,4 +108,21 @@ body {
 }
 .item-example__text {
   line-height: 1.5;
+}
+@media (max-width: 48em) {
+  .example__title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 48em) {
+  .example__container::before {
+    content: "";
+    background: url("./img/decor.svg") 0 0 / 100% no-repeat;
+    position: absolute;
+    right: 0;
+    width: 14.57%;
+    padding-top: 22.95%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
 }
